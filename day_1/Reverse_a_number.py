@@ -1,3 +1,5 @@
-word = input("Enter a string: ")
-reversed_string = word[::-1]
-print(reversed_string)
+try:
+    n = input("Enter a number: ")
+    print("Reversed:", n[::-1])
+except Exception as e:
+    print("Error:", e)
