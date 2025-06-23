@@ -1,4 +1,6 @@
-Num = int(input("Enter a number: "))
-
-for i in range(1, 11):
-    print(Num * i)
+try:
+    n = int(input("Enter a number: "))
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n * i}")
+except ValueError:
+    print("Please enter a valid integer.")
